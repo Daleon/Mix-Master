@@ -1,8 +1,6 @@
 <h1><%= @artist.name %></h1><br>
 <%= image_tag @artist.image_path %><br><br>
-
-
-
 <%= link_to "<< Back to Artist List", artists_path %><br><br>
 <%= link_to "delete", artist_path(@artist), method: :delete %><br><br>
 <%= link_to "edit", edit_artist_path(@artist) %>
+<%= link_to "New song", new_artist_song_path(@artist) %>
