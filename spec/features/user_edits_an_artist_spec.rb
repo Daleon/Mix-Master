@@ -6,7 +6,7 @@ RSpec.feature "user edits an existing artist" do
     artist = Artist.create(name: "Frank Sinatra", image_path: artist_image_path)
 
     visit artist_path(artist)
-    click_on "edit"
+    click_on "Edit"
     fill_in "artist_name", with: "Bob Marley"
     fill_in "artist_image_path", with: "http://cps-static.rovicorp.com/3/JPG_400/MI0003/146/MI0003146038.jpg"
     click_on "Update Artist"

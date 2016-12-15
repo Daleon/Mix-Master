@@ -6,7 +6,7 @@ RSpec.feature "user visits artist page and deletes the artist" do
     artist = Artist.create(name: "Bob Marley", image_path: artist_image_path)
 
     visit artist_path(artist)
-    click_on "delete"
+    click_on "Delete"
 
     expect(page).to_not have_content "Bob Marley"
     expect(page).to_not have_css("img[src=\"#{artist_image_path}\"]")

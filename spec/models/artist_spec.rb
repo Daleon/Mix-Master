@@ -7,4 +7,3 @@ RSpec.describe Artist, type: :model do
     it { is_expected.to validate_uniqueness_of(:name) }
   end
 end
-  # pending "add some examples to (or delete) #{__FILE__}"

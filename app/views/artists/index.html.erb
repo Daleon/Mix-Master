@@ -1,11 +1,9 @@
 <h1>All Artists</h1>
 
-<ul id="artists">
+<%= link_to "New artist", new_artist_path %>
+
+<ul>
   <% @artists.each do |artist| %>
-    <li>
-      <%= link_to artist.name, artist_path(artist),
-          class: 'artist_name', id: "artist_#{artist.id}" %>
-    </li>
+    <li><%= link_to artist.name, artist %></li>
   <% end %>
 </ul>
-<%= link_to "Create a New Artist", new_artist_path, class: "new_artist" %>
