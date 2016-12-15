@@ -6,7 +6,7 @@ RSpec.feature "user submits a new artist" do
     artist_image_path = "http://cps-static.rovicorp.com/3/JPG_400/MI0003/146/MI0003146038.jpg"
 
     visit '/artists'
-    click_on "Create a New Artist"
+    click_on "New artist"
     fill_in "artist_name", with: artist_name
     fill_in "artist_image_path", with: artist_image_path
     click_on "Create Artist"
@@ -20,7 +20,7 @@ RSpec.feature "user submits a new artist" do
       artist_image_path = "http://cps-static.rovicorp.com/3/JPG_400/MI0003/146/MI0003146038.jpg"
 
       visit artists_path
-      click_on "Create a New Artist"
+      click_on "New artist"
       fill_in "artist_image_path", with: artist_image_path
       click_on "Create Artist"
 
