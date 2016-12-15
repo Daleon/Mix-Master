@@ -10,6 +10,9 @@ gem 'jquery-rails'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'unicorn'
+gem 'omniauth-oauth2'
+gem "figaro"
+
 
 group :development, :test do
   gem 'byebug'
@@ -19,6 +22,7 @@ group :development, :test do
   gem 'shoulda-matchers'
   gem "factory_girl_rails"
   gem "database_cleaner"
+
 end
 
 group :development do
